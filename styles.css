@@ -1,0 +1,18 @@
+:root {
+    --background-color: #000000;
+    --background-color-active: #404040;
+
+    --primary: #E6E8E6;
+    --secondary: #429EA6;
+    --tri: #0DAB76;
+
+    --bright: #fff;
+    --dark: #000000;
+
+    --border-alt: #101010;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
