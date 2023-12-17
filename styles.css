@@ -1,13 +1,15 @@
 :root {
     --background-color: #000000;
-    --background-color-active: #404040;
+    --background-color-active: #353535;
 
     --primary: #E6E8E6;
-    --secondary: #429EA6;
-    --tri: #0DAB76;
+    --accent: #429EA6;
 
     --bright: #fff;
     --dark: #000000;
+
+    --brightify: rgba(255, 255, 255, 0.1);
+    --darkify: rgba(0, 0, 0, 0.1);
 
     --border-alt: #101010;
 }
@@ -15,4 +17,33 @@
 * {
     box-sizing: border-box;
     font-family: "Poppins";
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary);
+    margin: 10px;
+}
+
+.section {
+    background-color: var(--background-color-active);
+    border-radius: 25px;
+}
+
+.sidebar {
+    background-color: var(--background-color-active);
+    border-radius: 0px 0px 50px 0px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 0;
+    outline: solid var(--background-color-active) 15px;
+    outline-offset: -15px;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.sidebar:hover {
+    outline: solid var(--background-color-active) 15px;
+    outline-offset: 0;
 }
